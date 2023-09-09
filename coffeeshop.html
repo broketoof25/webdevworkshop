@@ -7,12 +7,13 @@
         <title>Coffee Shop</title>
         <!-- Bootstrap CSS link -->
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <style>
             /* Custom CSS */
             .hero-section {
                 background: url('img/coffeecupcircle.png') no-repeat center center;
                 background-size: cover;
-                height: 60vh;
+                height: 80vh;
                 color: white;
                 display: flex;
                 justify-content: center;
@@ -29,10 +30,24 @@
                 align-items: center;
             }
 
-            .footer {
-                height: 5vh;
-                display: flex;
-                background-color: #765827;
+            .social-link {
+                margin: 0 10px; /* Spacing between icons */
+                color: #333; /* Default color */
+                transition: color 0.3s ease; /* Smooth transition for hover effect */
+                font-size: 48px;
+                color: #EAC696;
+            }
+
+            .social-link:hover {
+                color: #007BFF; /* Change color on hover to Bootstrap primary blue. You can replace this with any color you like. */
+                text-decoration: none; /* Remove underline on hover */
+            }
+
+            .contactme {
+                background: url('img/contactus.png') no-repeat center center;
+                background-size: cover;
+                height: 30vh;
+                color: #65451F
             }
         </style>
     </head>
@@ -84,17 +99,18 @@
         </section>
 
         <!-- Contact Us -->
-        <section>
-            <div class="row">  
-                <h3 class="col-6 ml-4">Contact Us</h3>
+        <section class=contactme>
+            <div class="row">
+                <div class="col-md-3 p-2 ml-4">  
+                    <h3>Contact Us</h3>
+                </div>
             </div>
             <div class="row">
-                <div class="col-6 col-sm-5 text-center">
-                    <h5>Social</h5>
-                    <a href="https://instagram.com/"><i class="fa-brands fa-instagram fa-xl"></i></a>
-                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook fa-xl"></i></a>
-                    <a href="https://twitter.com/"><i class="fa-brands fa-twitter fa-xl"></i></a>
-                    <a href="https://youtube.com/"><i class="fa-brands fa-youtube fa-xl"></i></a>
+                <div  class="col-sm-12">
+                    <a href="https://instagram.com/" class="social-link"><i class="fa fa-instagram"></i></a>
+                    <a href="https://facebook.com/" class="social-link"><i class="fa fa-facebook"></i></a>
+                    <a href="https://twitter.com/" class="social-link"><i class="fa fa-twitter"></i></a>
+                    <a href="https://youtube.com/" class="social-link"><i class="fa fa-youtube"></i></a>
                 </div>
             </div>
         </section>
@@ -214,8 +230,8 @@
     
 
         <!-- Footer -->
-        <div class=>
-            <footer class="bg-dark text-white mt-5 p-4 text-center">
+        <div>
+            <footer class="bg-dark text-white p-4 text-center">
                 <div class="row">
                     <div class="col-md-12 p-4">
                         <img src="img/footer-culture-bird.png" alt="culture bird">
